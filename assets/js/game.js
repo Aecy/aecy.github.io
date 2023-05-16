@@ -43,7 +43,10 @@ var Game = function () {
 		betCashoutElement.addEventListener('click', function (event) {
 			event.preventDefault()
 
-			if (state === gameState.LOSE) return
+			if (state === gameState.LOSE) {
+				location.reload()
+				return
+			}
 
 			var cashed = (parseInt(earned) + parseInt(wallet))
 			localStorage.setItem('wallet', cashed)
