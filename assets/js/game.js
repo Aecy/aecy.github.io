@@ -18,7 +18,7 @@ var Game = function () {
 	var coefValueElement = document.querySelector('[data-info-coef]')
 
 	var earned = 0
-	var wallet = localStorage.getItem('wallet');
+	var wallet = localStorage.getItem('wallet') || 500;
 
 	var _listeners = function () {
 		var betButtonElem = document.querySelector('[data-bet-button]')
