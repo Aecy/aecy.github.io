@@ -1,4 +1,4 @@
-var assets = { bell: '/assets/img/bell.png', bone: '/assets/img/bone.png', chicken: '/assets/img/chicken.png' }
+var assets = { bell: './assets/img/bell.png', bone: './assets/img/bone.png', chicken: './assets/img/chicken.png' }
 var gameState = { WAITING: 'waiting', PLAYING: 'playing', LOSE: 'lose' }
 
 var Game = function () {
